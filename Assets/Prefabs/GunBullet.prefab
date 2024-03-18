@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6077887178293890908}
   - component: {fileID: 3804387086875068869}
   m_Layer: 0
-  m_Name: RPGBullet
+  m_Name: GunBullet
   m_TagString: RPGBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

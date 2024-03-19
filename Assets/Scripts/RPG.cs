@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Gun2D : MonoBehaviour
+public class RPG : MonoBehaviour
 {
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
     public float fireRate = 0.1f;
-    public int maxBullets = 10;
-    public int bulletsLeft = 30;
+    public int maxBullets = 1;
+    public int bulletsLeft = 1;
 
     public Text bulletsLeftText;
 
@@ -29,7 +29,7 @@ public class Gun2D : MonoBehaviour
             isShooting = true;
             StartCoroutine(ShootBullets());
         }
-        else if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < 30)
+        else if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < 1)
         {
             Reload();
         }
@@ -63,7 +63,7 @@ public class Gun2D : MonoBehaviour
 
     void Reload()
     {
-        bulletsLeft = 30;
+        bulletsLeft = 1;
         UpdateBulletsLeftText();
     }
 
@@ -71,7 +71,7 @@ public class Gun2D : MonoBehaviour
     {
         if (bulletsLeftText != null)
         {
-            bulletsLeftText.text = bulletsLeft.ToString() + "/30";
+            bulletsLeftText.text = bulletsLeft.ToString() + "/1";
         }
     }
 }

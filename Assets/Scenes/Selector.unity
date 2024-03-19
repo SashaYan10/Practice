@@ -247,8 +247,8 @@ Transform:
   m_GameObject: {fileID: 294221275}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.29, y: -4.09, z: 0}
-  m_LocalScale: {x: 15.5913, y: 1.5889, z: 1}
+  m_LocalPosition: {x: 0.4472, y: -4.09, z: 0}
+  m_LocalScale: {x: 64.954384, y: 1.5889, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -350,8 +350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dc9b8acfb2be943bceb79da3c5984a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefabGun: {fileID: 4438272544751621411, guid: 87b7468c638aa154e86a1e165a4a803d, type: 3}
-  playerPrefabRPG: {fileID: 537623291292278298, guid: 8903e9405d8f9bc418ec5ff46f6cb9d4, type: 3}
+  playerPrefabGun: {fileID: 1934410466187004036, guid: 87b7468c638aa154e86a1e165a4a803d, type: 3}
+  playerPrefabRPG: {fileID: 3977662962991897710, guid: b9ddace4c84c67142b1ecd34aded30ec, type: 3}
   spawnPoint: {fileID: 1200661065}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

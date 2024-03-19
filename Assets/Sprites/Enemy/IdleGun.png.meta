@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89353cf112bf9a0479dd72b7c339f1a8
+guid: 9f2f14bd26170304488d7f6d2ded7cd4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,127 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_1
+      name: IdleGun_1
       rect:
         serializedVersion: 2
-        x: 3
+        x: 6
         y: 0
         width: 25
-        height: 32
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d8162a8ab6c524a8caa0d372a18eb0
-      internalID: -980561715
+      spriteID: 890e89a43ab8b0e4aaa7900aa08080bc
+      internalID: 840803451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_2
+      name: IdleGun_2
       rect:
         serializedVersion: 2
-        x: 56
-        y: 0
-        width: 18
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c84b49d9653d9940878110239f3f5fa
-      internalID: -192193610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_3
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 0
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b86b6885c37808346a38775430f9928f
-      internalID: -1247573762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_4
-      rect:
-        serializedVersion: 2
-        x: 146
+        x: 52
         y: 0
         width: 25
-        height: 32
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5385aa3fba19acf4197ac907432b897f
-      internalID: -1488274477
+      spriteID: 2dab84e701a22844db7278f767ae12cb
+      internalID: -314962571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_5
+      name: IdleGun_3
       rect:
         serializedVersion: 2
-        x: 200
+        x: 101
         y: 0
-        width: 18
-        height: 32
+        width: 25
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e75881c94bfb6a4baaecedf824453c4
-      internalID: 620981777
+      spriteID: f3d774e4d7f530240ae9fc8000f98e6a
+      internalID: -1645728034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_6
+      name: IdleGun_4
       rect:
         serializedVersion: 2
-        x: 243
+        x: 151
         y: 0
-        width: 24
-        height: 31
+        width: 25
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8971367ecb194ec4c9a7e0cbd3f88e44
-      internalID: 1190194357
+      spriteID: 7cd733537e49d2548b19ca864e57ef51
+      internalID: -649491584
       vertices: []
       indices: 
       edges: []
@@ -259,12 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk_1: -980561715
-      Walk_2: -192193610
-      Walk_3: -1247573762
-      Walk_4: -1488274477
-      Walk_5: 620981777
-      Walk_6: 1190194357
+      IdleGun_1: 840803451
+      IdleGun_2: -314962571
+      IdleGun_3: -1645728034
+      IdleGun_4: -649491584
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

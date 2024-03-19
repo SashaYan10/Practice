@@ -915,8 +915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dc9b8acfb2be943bceb79da3c5984a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefabGun: {fileID: 2119386169938808900, guid: 72369c0f620fe3045a2068dbf8f09412, type: 3}
-  playerPrefabRPG: {fileID: 4359378580496162399, guid: b7085af482d0aa342a7af59614b5b6c2, type: 3}
+  playerPrefabGun: {fileID: 4438272544751621411, guid: 87b7468c638aa154e86a1e165a4a803d, type: 3}
+  playerPrefabRPG: {fileID: 537623291292278298, guid: 8903e9405d8f9bc418ec5ff46f6cb9d4, type: 3}
   spawnPoint: {fileID: 0}
 --- !u!1 &875964582
 GameObject:

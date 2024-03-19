@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 83cd8e83a6f01294d98a6fae44690f1f
+guid: 6216939048e4bfc488ae8366621c80e8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,76 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jump_1
+      name: IdleRPG_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69cdf1f3bd4eb4a4fb970c4e52e3b807
-      internalID: 1258200707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jump_2
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 4
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a67a7d91ab84d00499408896d905201c
-      internalID: -1470300176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jump_3
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 2
-        width: 26
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 738d4ce93d13ed0439a6ded911a519e1
-      internalID: -647355970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jump_4
-      rect:
-        serializedVersion: 2
-        x: 146
+        x: 6
         y: 0
-        width: 25
-        height: 32
+        width: 30
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +137,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22af5360508dab64e9d80af153246053
-      internalID: 670839164
+      spriteID: 7f69110da93c308469acea39aa3e1249
+      internalID: -2133552155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRPG_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4b306632342824db37004d3de65430
+      internalID: -1351181351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRPG_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecae74f0d766d8345a05a3135a291878
+      internalID: 344113415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRPG_4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14c27e09b8b58748845b065a24c3894
+      internalID: -564628412
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jump_1: 1258200707
-      Jump_2: -1470300176
-      Jump_3: -647355970
-      Jump_4: 670839164
+      IdleRPG_1: -2133552155
+      IdleRPG_2: -1351181351
+      IdleRPG_3: -1351181351
+      IdleRPG_4: 344113415
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

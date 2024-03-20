@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Bullet
   - RPGBullet
+  - Wall
+  - Puzzle
   layers:
   - Default
   - TransparentFX

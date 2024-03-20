@@ -73,4 +73,14 @@ public class Enemy : MonoBehaviour
 
         Destroy(gameObject);
     }
+
+    //Take melee damage
+    public void TakeKatanaDamage(int Damage)
+    {
+        health -= Damage;
+        if(health <= 0)
+        {
+            KillEnemy();
+        }
+    }
 }

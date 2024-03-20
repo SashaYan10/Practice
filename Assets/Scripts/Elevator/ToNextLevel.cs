@@ -20,6 +20,7 @@ public class FinishProcessing : MonoBehaviour
 
     private IEnumerator WaitAndLoad()
     {
+        yield return new WaitForSeconds(4);
         BlackScreen.Showed = true;
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(NextLevel);

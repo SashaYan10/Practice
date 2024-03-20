@@ -2,19 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraFollowing : MonoBehaviour
 {
-    private Transform player;
-    void Start()
+    [SerializeField] private float speed;
+    [SerializeField] private Transform currentCamera;
+    [SerializeField] private Transform Player;
+    void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        currentCamera = Camera.main.transform;
     }
-    void LateUpdate()
-    {
-        Vector3 temp = transform.position;
-        temp.x = player.position.x;
-        temp.y = player.position.y;
 
-        transform.position = temp;
+    void Update()
+    {
+        if (currentCamera == null)
+            return;
+
+        var cameraPosition = transform.position;
+        cameraPosition.x = Mathf.Lerp(cameraPosition.x, Player.position.x, speed);
+
+        currentCamera.position = cameraPosition;
     }
 }

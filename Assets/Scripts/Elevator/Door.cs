@@ -9,10 +9,13 @@ public class Door : MonoBehaviour
     public GameObject DoorClosed;
 
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("OnTriggerEnter2D");
-        StartCoroutine(WaitAndLoad());
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.Log("OnTriggerEnter2D");
+            StartCoroutine(WaitAndLoad());
+        }
     }
 
     private IEnumerator WaitAndLoad()

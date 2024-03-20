@@ -11,11 +11,14 @@ public class RPG : MonoBehaviour
     public float fireRate = 0.1f;
     public int maxBullets = 1;
     public int bulletsLeft = 1;
+    public float reloadDelay = 2.0f; // Час перезарядки
 
     public Text bulletsLeftText;
 
     private bool isShooting = false;
     private int bulletsFired = 0;
+    private bool isReloading = false;
+    private float reloadTimer = 0.0f;
 
     void Start()
     {
@@ -29,14 +32,25 @@ public class RPG : MonoBehaviour
             isShooting = true;
             StartCoroutine(ShootBullets());
         }
-        else if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < 1)
+        else if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < 1 && !isReloading)
         {
-            Reload();
+            isReloading = true;
+            reloadTimer = reloadDelay;
         }
         else if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             isShooting = false;
             bulletsFired = 0;
+        }
+
+        if (isReloading)
+        {
+            reloadTimer -= Time.deltaTime;
+            if (reloadTimer <= 0)
+            {
+                Reload();
+                isReloading = false;
+            }
         }
     }
 

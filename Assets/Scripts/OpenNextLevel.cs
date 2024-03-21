@@ -31,13 +31,13 @@ public class OpenNextLevel : MonoBehaviour
 
     void RiseObject()
     {
-        float speed = 2.0f;
+        float speed = 0.5f;
 
         // Отримуємо початкову позицію ліфта
         Vector3 startPosition = transform.position;
 
         // Отримуємо цільову позицію ліфта
-        Vector3 targetPosition = new Vector3(startPosition.x, startPosition.y + 2.0f, startPosition.z);
+        Vector3 targetPosition = new Vector3(startPosition.x, startPosition.y + 9.0f, startPosition.z);
 
         // Переміщуємо ліфт до цільової позиції
         while (transform.position != targetPosition)

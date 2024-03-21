@@ -41,7 +41,25 @@ public class Enemy : MonoBehaviour
                 Invoke("ResetMaterial", .05f);
             }
         }
+        else if (collision.CompareTag("RPGBullet")) // Додано перевірку тегу RPGBullet
+        {
+            Destroy(collision.gameObject);
+            health -= 10; // Зменшення здоров'я на 10 одиниць
+
+            spriteRend.material = matBlink;
+
+            if (health <= 0)
+            {
+                //kill
+                KillEnemy();
+            }
+            else
+            {
+                Invoke("ResetMaterial", .05f);
+            }
+        }
     }
+
 
     void ResetMaterial()
     {

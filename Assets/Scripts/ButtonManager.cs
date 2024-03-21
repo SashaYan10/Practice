@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
-
     public void ExitGame()
     {
         Application.Quit();
@@ -25,5 +24,16 @@ public class ButtonManager : MonoBehaviour
     public void HidePanel(GameObject obj)
     {
         obj.SetActive(false);
+    }
+
+    public void PauseGame(PauseButton pauseButton)
+    {
+        pauseButton.PauseGame();
+    }
+
+    // Update is called once per frame
+    public void ResumeGame(ResumeButton resumeButton)
+    {
+        resumeButton.ResumeGame();
     }
 }

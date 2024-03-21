@@ -7,16 +7,17 @@ TagManager:
   - Enemy
   - Bullet
   - RPGBullet
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
+  - PlayerHit
+  - EnemyHit
+  - PostProcessing
   - 
   - 
   - 

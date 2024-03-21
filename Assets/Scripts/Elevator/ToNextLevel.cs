@@ -22,7 +22,9 @@ public class FinishProcessing : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         BlackScreen.Showed = true;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
+        BlackScreen.Showed = true;
+        yield return new WaitForSeconds(4);
         SceneManager.LoadScene(NextLevel);
     }
 }

@@ -8,6 +8,9 @@ TagManager:
   - Bullet
   - RPGBullet
   - EnemyBullet
+  - Undefined
+  - Ground
+  - RPGEnemyBullet
   layers:
   - Default
   - TransparentFX

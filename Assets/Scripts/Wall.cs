@@ -8,7 +8,7 @@ public class Wall : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bullet") || collision.CompareTag("RPGBullet"))
+        if (collision.CompareTag("Bullet") || collision.CompareTag("RPGBullet") || collision.CompareTag("RPGEnemyBullet") || collision.CompareTag("EnemyBullet"))
         {
             Destroy(collision.gameObject);
             health++;

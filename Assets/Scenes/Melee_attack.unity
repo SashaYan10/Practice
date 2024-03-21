@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 626922783}
   - component: {fileID: 626922782}
   - component: {fileID: 626922788}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: EnemyKatana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +601,7 @@ Transform:
   m_GameObject: {fileID: 674932899}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.66, y: 1.74, z: 0}
+  m_LocalPosition: {x: 0.42, y: 1.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1429,7 +1429,7 @@ MonoBehaviour:
   attackRate: 2
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 9
   attackPoint: {fileID: 674932900}
 --- !u!20 &9062507324569488722
 Camera:

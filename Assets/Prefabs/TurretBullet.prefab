@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 4904915324394116277}
   - component: {fileID: 48348146789459294}
   - component: {fileID: 7539278944942658524}
-  - component: {fileID: 752920315057436413}
   - component: {fileID: 420705867694390228}
   - component: {fileID: 8676017106301321334}
+  - component: {fileID: -8306332114898073777}
   m_Layer: 0
-  m_Name: BulletEnemy
+  m_Name: TurretBullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,19 +151,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.0039003137}
   serializedVersion: 2
   m_Radius: 0.034912564
---- !u!114 &752920315057436413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9051278110123704774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a43f4937d211b074cbd40f8b45365c7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 5
 --- !u!61 &420705867694390228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -305,3 +292,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8306332114898073777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051278110123704774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 550d397551eb53b499e9725fc94f8765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 5

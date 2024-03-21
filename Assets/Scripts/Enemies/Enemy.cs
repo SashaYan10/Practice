@@ -11,7 +11,8 @@ public class Enemy : MonoBehaviour
     private SpriteRenderer spriteRend;
 
     private UnityEngine.Object explosion;
-
+    public Transform player;
+    public bool isFlipped = false;
     void Start()
     {
         spriteRend = GetComponent<SpriteRenderer>();
@@ -81,6 +82,26 @@ public class Enemy : MonoBehaviour
         if(health <= 0)
         {
             KillEnemy();
+        }
+    }
+    
+
+    public void LookAtPlayer()
+    {
+        Vector3 flipped = transform.localScale;
+        flipped.z *= -1f;
+
+        if (transform.position.x > player.position.x && isFlipped)
+        {
+            transform.localScale = flipped;
+            transform.Rotate(0f, 180f, 0f);
+            isFlipped = false;
+        }
+        else if (transform.position.x < player.position.x && !isFlipped)
+        {
+            transform.localScale = flipped;
+            transform.Rotate(0f, 180f, 0f);
+            isFlipped = true;
         }
     }
 }

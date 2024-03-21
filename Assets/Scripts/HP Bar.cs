@@ -1,32 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HPBar : MonoBehaviour
 {
     public Image HealthImage;
     private float HealthCount = 100f;
-    private int DecreaseCount = 2;
+    public float damageGunBullet;
+    public float damageRPGBullet;
+    public string gameOverSceneName;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "EnemyHit")
+        if (collision.CompareTag("EnemyBullet"))
         {
-            HealthCount -= 5f;
+            HealthCount -= damageGunBullet;
             HealthImage.fillAmount = HealthCount / 100f;
         }
+        else if (collision.CompareTag("RPGEnemyBullet"))
+        {
+            HealthCount -= damageRPGBullet;
+            HealthImage.fillAmount = HealthCount / 100f;
+        }
+
+        CheckHealth();
+    }
+
+    void CheckHealth()
+    {
+        if (HealthCount <= 0)
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        SceneManager.LoadScene(gameOverSceneName);
     }
 }

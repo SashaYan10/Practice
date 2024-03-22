@@ -6,13 +6,14 @@ public class Enemy_Run : StateMachineBehaviour
 {
 
 	public float speed = 3.5f;
-	public float attackRange = 3f;
+	public float attackRange = 1f;
 	public float sightRange = 0f;
 	Transform player;
 	Rigidbody2D rb;
 	Enemy enemy;
 	public Transform attackPoint;
-
+	float nextAttackTime = 0f;
+	public float attackRate = 2f;
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
@@ -26,6 +27,8 @@ public class Enemy_Run : StateMachineBehaviour
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
 		sightRange = 20f;
+		GameObject player1 = GameObject.Find("Character1");
+		player = player1.transform;
 		if (Vector2.Distance(player.position, rb.position) <= sightRange)
 		{
 			animator.SetTrigger("EnemyRun");
@@ -44,13 +47,19 @@ public class Enemy_Run : StateMachineBehaviour
 			
 			Debug.Log("Disabled trigger 1 ");
 		}
-
+		attackRange = 1f;
 		if (Vector2.Distance(player.position, rb.position) <= attackRange)
 		{
-			animator.SetTrigger("EnemyKatanaAttack");
+			if (Time.time >= nextAttackTime)
+			{
+				animator.SetTrigger("EnemyKatanaAttack");
+				//enemy.GetComponent<Enemy>().TakeKatanaDamage(5);
+				player.GetComponent<HPBar>().TakeKatanaDamage(5f);
+				nextAttackTime = Time.time + 1f / attackRate;
+			}
 			//Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-			
-			
+
+
 			//player.GetComponent<Control>().
 		}
         

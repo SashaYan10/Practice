@@ -38,4 +38,13 @@ public class HPBar : MonoBehaviour
     {
         SceneManager.LoadScene(gameOverSceneName);
     }
+    public void TakeKatanaDamage(float Damage)
+    {
+        HealthCount -= Damage;
+        if (HealthCount <= 0)
+        {
+            GameOver();
+        }
+        HealthImage.fillAmount = HealthCount / 100f;
+    }
 }

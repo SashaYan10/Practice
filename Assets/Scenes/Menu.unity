@@ -917,6 +917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefabGun: {fileID: 1934410466187004036, guid: 87b7468c638aa154e86a1e165a4a803d, type: 3}
   playerPrefabRPG: {fileID: 3977662962991897710, guid: b9ddace4c84c67142b1ecd34aded30ec, type: 3}
+  playerPrefabKatana: {fileID: 1934410466187004036, guid: 0f100dac9ab10ab479b4a3bd42d7f656, type: 3}
   spawnPoint: {fileID: 0}
 --- !u!1 &875964582
 GameObject:

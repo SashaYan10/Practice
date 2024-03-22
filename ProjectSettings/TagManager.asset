@@ -11,6 +11,7 @@ TagManager:
   - Undefined
   - Ground
   - RPGEnemyBullet
+  - PlayerCanvas
   layers:
   - Default
   - TransparentFX

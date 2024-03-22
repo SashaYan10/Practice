@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     private UnityEngine.Object explosion;
     public Transform player;
     public bool isFlipped = false;
+    public Transform attackPoint;
     void Start()
     {
         spriteRend = GetComponent<SpriteRenderer>();

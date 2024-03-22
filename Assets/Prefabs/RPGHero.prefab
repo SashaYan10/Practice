@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 421600218658083909}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.57, y: 0.61, z: -1}
+  m_LocalPosition: {x: 1.643, y: 0.61, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 6791708555997467538}
   - component: {fileID: 4968199178320265215}
   - component: {fileID: 1893388799675371184}
-  - component: {fileID: 6673287533832728835}
+  - component: {fileID: 3301132051592164117}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -386,7 +386,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2, y: 3.5}
   m_EdgeRadius: 0
---- !u!114 &6673287533832728835
+--- !u!114 &3301132051592164117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 899709621674504023}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730c58a7dced3754eaebf37564a4e082, type: 3}
+  m_Script: {fileID: 11500000, guid: ed7b4fb17b9799243bffecb8c06ee74f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3977662962991897710
@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 3453015496469572747}
   m_Layer: 5
   m_Name: RPGHero
-  m_TagString: Player
+  m_TagString: PlayerCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

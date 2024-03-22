@@ -1,78 +1,77 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml.Serialization;
 using UnityEngine;
 
 public class TurretVer2 : MonoBehaviour
 {
     public float Range;
-
-    public Transform Target;
+    Transform target; // Зміна типу Transform для пошуку цілі
 
     bool Detected = false;
-
     Vector2 Direction;
 
     public GameObject AlarmLight;
-
     public GameObject Gun;
-
     public GameObject Bullet;
-
     public float FireRate;
     float nextTimeToFire = 0;
-
     public Transform ShootPoint;
-
     public float Force;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        Vector2 targetPos = Target.position;
+        FindTarget(); // Знаходження цілі кожен кадр
 
-        Direction = targetPos - (Vector2)transform.position;
-
-        RaycastHit2D rayInfo = Physics2D.Raycast(transform.position, Direction, Range);
-
-        if(rayInfo)
+        if (target != null) // Перевірка наявності цілі
         {
-            if(rayInfo.collider.gameObject.tag == "Player")
+            Vector2 targetPos = target.position;
+            Direction = targetPos - (Vector2)transform.position;
+
+            RaycastHit2D rayInfo = Physics2D.Raycast(transform.position, Direction, Range);
+
+            if (rayInfo && rayInfo.collider.gameObject.tag == "Player")
             {
-                if(Detected == false)
+                if (!Detected)
                 {
                     Detected = true;
                     AlarmLight.GetComponent<SpriteRenderer>().color = Color.red;
                 }
             }
-
             else
             {
-                if (Detected == true)
+                if (Detected)
                 {
                     Detected = false;
                     AlarmLight.GetComponent<SpriteRenderer>().color = Color.green;
                 }
             }
-        }
 
-        if(Detected)
-        {
-            Gun.transform.up = Direction;
-            if(Time.time > nextTimeToFire)
+            if (Detected)
             {
-                nextTimeToFire = Time.time + 1 / FireRate;
-                shoot();
+                Gun.transform.up = Direction;
+                if (Time.time > nextTimeToFire)
+                {
+                    nextTimeToFire = Time.time + 1 / FireRate;
+                    Shoot();
+                }
             }
         }
     }
 
-    void shoot()
+    void FindTarget()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            target = player.transform;
+        }
+        else
+        {
+            target = null;
+        }
+    }
+
+    void Shoot()
     {
         GameObject BulletIns = Instantiate(Bullet, ShootPoint.position, Quaternion.identity);
         BulletIns.GetComponent<Rigidbody2D>().AddForce(Direction * Force);

@@ -8,7 +8,6 @@ public class FinishProcessing : MonoBehaviour
 {
     public string NextLevel;
     public BlackScreen BlackScreen;
-    public ForCards Card;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,10 +23,6 @@ public class FinishProcessing : MonoBehaviour
         yield return new WaitForSeconds(4);
         BlackScreen.Showed = true;
         yield return new WaitForSeconds(1);
-        BlackScreen.Showed = true;
-        yield return new WaitForSeconds(4);
-        Card.Showed = true;
-        yield return new WaitForSeconds(4);
         SceneManager.LoadScene(NextLevel);
     }
 }

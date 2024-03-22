@@ -20,12 +20,12 @@ public class BlackScreen : MonoBehaviour
     {
         if (Showed && image.color.a < 1)
         {
-            image.color = new Color(0, 0, 0, Mathf.Lerp(image.color.a, 1, 0.05f));
+            image.color = new Color(0, 0, 0, Mathf.Lerp(image.color.a, 1, 0.005f));
         }
 
         if (!Showed && image.color.a > 0)
         {
-            image.color = new Color(0, 0, 0, Mathf.Lerp(image.color.a, 0, 0.05f));
+            image.color = new Color(0, 0, 0, Mathf.Lerp(image.color.a, 0, 0.005f));
         }
     }
 }

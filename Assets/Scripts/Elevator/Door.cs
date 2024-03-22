@@ -7,7 +7,7 @@ public class Door : MonoBehaviour
 {
     public GameObject DoorOpened;
     public GameObject DoorClosed;
-
+    public GameObject LevelScript;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,5 +23,6 @@ public class Door : MonoBehaviour
         yield return new WaitForSeconds(1);
         DoorOpened.SetActive(false);
         DoorClosed.SetActive(true);
+        LevelScript.SetActive(true);
     }
 }

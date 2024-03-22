@@ -45,7 +45,7 @@ public class Enemy : MonoBehaviour
         else if (collision.CompareTag("RPGBullet")) // Додано перевірку тегу RPGBullet
         {
             Destroy(collision.gameObject);
-            health -= 10; // Зменшення здоров'я на 10 одиниць
+            health -= 15; // Зменшення здоров'я на 10 одиниць
 
             spriteRend.material = matBlink;
 

@@ -27,4 +27,4 @@ public class FinishProcessing : MonoBehaviour
         yield return new WaitForSeconds(4);
         SceneManager.LoadScene(NextLevel);
     }
-}
+} 

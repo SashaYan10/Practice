@@ -11,7 +11,7 @@ public class KatanaEnemy_Idle : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
     rb = animator.GetComponent<Rigidbody2D>();
-    player = GameObject.FindGameObjectWithTag("Player").transform;
+    player = GameObject.FindGameObjectWithTag("Player1").transform;
         //    
     }
 
@@ -20,6 +20,9 @@ public class KatanaEnemy_Idle : StateMachineBehaviour
     {
         //    
         sightRange = 20f;
+        rb = animator.GetComponent<Rigidbody2D>();
+        GameObject player1 = GameObject.Find("Character1");
+        player = player1.transform;
         if (Vector2.Distance(player.position, rb.position) <= sightRange)
         {
             animator.ResetTrigger("EnemyIdle");

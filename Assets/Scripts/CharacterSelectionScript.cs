@@ -5,6 +5,7 @@ public class CharacterSelectionScript : MonoBehaviour
 {
     public GameObject playerPrefabGun;
     public GameObject playerPrefabRPG;
+    public GameObject playerPrefabKatana;
     public Transform spawnPoint;
 
     public void SelectCharacterGun()

@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Third Level.unity
     guid: b0078c7ae9ed45a4cb02771fd3806ff0
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: b2cfd7743bea69146b8210cfaf7f9e72
+  - enabled: 1
+    path: Assets/Scenes/PPC.unity
+    guid: 0108f76dee2247c4898c132a393197b5
   m_configObjects: {}

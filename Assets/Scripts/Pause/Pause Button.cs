@@ -9,13 +9,7 @@ public class PauseButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (GameOnPause)
-                return;
-            else
-                PauseGame();
-        }
+        
     }
 
     public void PauseGame()

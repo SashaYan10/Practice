@@ -3,14 +3,21 @@ using UnityEngine;
 public class OpenNextLevel : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemyObjects;
-    [SerializeField] private GameObject objectToRise;
+    [SerializeField] private Transform objectToRise; // Змінено з GameObject на Transform для використання аналогічно до SmoothMovement
     private bool allEnemiesDestroyed = false;
 
+    private bool isRising = false; // Прапорець, щоб визначати, чи об'єкт піднімається
+    private float riseSpeed = 2.0f; // Швидкість підйому об'єкта
 
     void Update()
     {
         CheckEnemiesDestroyed();
-        if (allEnemiesDestroyed)
+        if (allEnemiesDestroyed && !isRising) // Додано перевірку на isRising, щоб підняти об'єкт тільки один раз
+        {
+            StartRising();
+        }
+
+        if (isRising)
         {
             RiseObject();
         }
@@ -29,20 +36,19 @@ public class OpenNextLevel : MonoBehaviour
         }
     }
 
+    void StartRising()
+    {
+        isRising = true;
+    }
+
     void RiseObject()
     {
-        float speed = 2.0f;
+        float step = riseSpeed * Time.deltaTime;
+        objectToRise.position = Vector3.MoveTowards(objectToRise.position, new Vector3(objectToRise.position.x, objectToRise.position.y + 2.0f, objectToRise.position.z), step);
 
-        // Отримуємо початкову позицію ліфта
-        Vector3 startPosition = transform.position;
-
-        // Отримуємо цільову позицію ліфта
-        Vector3 targetPosition = new Vector3(startPosition.x, startPosition.y + 2.0f, startPosition.z);
-
-        // Переміщуємо ліфт до цільової позиції
-        while (transform.position != targetPosition)
+        if (objectToRise.position.y >= objectToRise.position.y + 2.0f)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+            isRising = false;
         }
     }
 }

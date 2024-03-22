@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class HPBar : MonoBehaviour
 {
     public Image HealthImage;
-    private float HealthCount = 100f;
+    private float HealthCount = 1000f;
     public float damageGunBullet;
     public float damageRPGBullet;
     public string gameOverSceneName;
@@ -37,5 +37,14 @@ public class HPBar : MonoBehaviour
     void GameOver()
     {
         SceneManager.LoadScene(gameOverSceneName);
+    }
+    public void TakeKatanaDamage(float Damage)
+    {
+        HealthCount -= Damage;
+        if (HealthCount <= 0)
+        {
+            GameOver();
+        }
+        HealthImage.fillAmount = HealthCount / 100f;
     }
 }

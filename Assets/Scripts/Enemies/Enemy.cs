@@ -61,7 +61,23 @@ public class Enemy : MonoBehaviour
             }
         }
     }
+    public void TakeBulletDamage(int Damage)
+    {
+        health -= Damage;
 
+        spriteRend.material = matBlink;
+
+        if (health <= 0)
+        {
+            //kill
+            KillEnemy();
+        }
+        else
+        {
+            Invoke("ResetMaterial", .05f);
+        }
+        
+    }
 
     void ResetMaterial()
     {
@@ -89,6 +105,8 @@ public class Enemy : MonoBehaviour
 
     public void LookAtPlayer()
     {
+        GameObject player1 = GameObject.Find("Character1");
+        player = player1.transform;
         Vector3 flipped = transform.localScale;
         flipped.z *= -1f;
 

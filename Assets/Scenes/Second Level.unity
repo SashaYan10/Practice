@@ -189,7 +189,7 @@ Transform:
   m_GameObject: {fileID: 58726862}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25790024, y: -1.839, z: -1}
+  m_LocalPosition: {x: 0.25790024, y: -1.797, z: -1}
   m_LocalScale: {x: 3.3581166, y: 0.40704492, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2205,6 +2205,7 @@ MonoBehaviour:
   health: 60
   player: {fileID: 0}
   isFlipped: 0
+  attackPoint: {fileID: 0}
 --- !u!114 &382307812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7531,6 +7532,7 @@ MonoBehaviour:
   health: 40
   player: {fileID: 0}
   isFlipped: 0
+  attackPoint: {fileID: 0}
 --- !u!114 &1306574568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8340,7 +8342,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9ed58176ddf6c5f44afc91dd75549d7f, type: 3}
   m_Color: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
   m_FlipX: 0
@@ -8361,7 +8363,7 @@ Transform:
   m_GameObject: {fileID: 1437591048}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.63, y: 2.65, z: -1.0411196}
+  m_LocalPosition: {x: 45.63, y: 2.65, z: -4}
   m_LocalScale: {x: 5.26995, y: 4.652135, z: 0.8399933}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8570,7 +8572,7 @@ Transform:
   m_GameObject: {fileID: 1467784457}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.242, y: -1.839, z: 1.1341311}
+  m_LocalPosition: {x: 0.242, y: -1.484, z: 1.1341311}
   m_LocalScale: {x: 3.3581166, y: 0.40704492, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9769,6 +9771,7 @@ MonoBehaviour:
   health: 60
   player: {fileID: 0}
   isFlipped: 0
+  attackPoint: {fileID: 0}
 --- !u!114 &1656113222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11934,7 +11937,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
+  m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13602,6 +13605,7 @@ MonoBehaviour:
   health: 60
   player: {fileID: 0}
   isFlipped: 0
+  attackPoint: {fileID: 0}
 --- !u!1 &3131380858554252157
 GameObject:
   m_ObjectHideFlags: 0
@@ -14176,6 +14180,7 @@ MonoBehaviour:
   health: 40
   player: {fileID: 0}
   isFlipped: 0
+  attackPoint: {fileID: 0}
 --- !u!4 &7773595045493724359
 Transform:
   m_ObjectHideFlags: 0
@@ -14259,6 +14264,7 @@ MonoBehaviour:
   health: 40
   player: {fileID: 0}
   isFlipped: 0
+  attackPoint: {fileID: 0}
 --- !u!4 &8187060417500044238
 Transform:
   m_ObjectHideFlags: 0

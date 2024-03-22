@@ -2216,7 +2216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &438821546
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3596,6 +3596,7 @@ MonoBehaviour:
   health: 40
   player: {fileID: 0}
   isFlipped: 0
+  attackPoint: {fileID: 0}
 --- !u!114 &705050611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5475,6 +5476,7 @@ MonoBehaviour:
   health: 60
   player: {fileID: 0}
   isFlipped: 0
+  attackPoint: {fileID: 0}
 --- !u!114 &1099225459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6072,6 +6074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextLevel: Scenes/Second Level
   BlackScreen: {fileID: 6579388495270703350}
+  Card: {fileID: 0}
 --- !u!1 &1191972538
 GameObject:
   m_ObjectHideFlags: 0
@@ -6428,7 +6431,7 @@ Transform:
   m_GameObject: {fileID: 1334315204}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25790024, y: -2.07, z: 1.1341311}
+  m_LocalPosition: {x: 0.25790024, y: -2.015, z: 1.1341311}
   m_LocalScale: {x: 3.3581166, y: 0.40704492, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7204,7 +7207,7 @@ Transform:
   m_GameObject: {fileID: 1513516620}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25790024, y: -1.839, z: -1}
+  m_LocalPosition: {x: 0.25790024, y: -1.804, z: -1}
   m_LocalScale: {x: 3.3581166, y: 0.40704492, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

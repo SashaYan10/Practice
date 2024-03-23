@@ -98,7 +98,7 @@ public class RPG : MonoBehaviour
         {
             if (bulletsLeft > 0)
             {
-                bulletsLeftText.text = bulletsLeft.ToString() + "/30";
+                bulletsLeftText.text = bulletsLeft.ToString() + "/1";
             }
             else
             {

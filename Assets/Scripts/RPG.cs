@@ -96,7 +96,14 @@ public class RPG : MonoBehaviour
     {
         if (bulletsLeftText != null)
         {
-            bulletsLeftText.text = bulletsLeft.ToString() + "/1";
+            if (bulletsLeft > 0)
+            {
+                bulletsLeftText.text = bulletsLeft.ToString() + "/30";
+            }
+            else
+            {
+                bulletsLeftText.text = "Натисніть R для перезарядки...";
+            }
         }
         else
         {

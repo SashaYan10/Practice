@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3740701452119898140}
   - component: {fileID: 5892113067861179856}
   - component: {fileID: 7852909045452673712}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera (1)
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 7460033245097159036}
   - component: {fileID: 4857587112244211532}
   - component: {fileID: 3452993505766127300}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Character1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -514,7 +514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2448669640496863117}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Character1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,7 +545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6088424138261970083}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -109,6 +109,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 6182259376206682473}
     m_Position: {x: 485, y: 95, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 6152813293463306840}
+    m_Position: {x: 520, y: 160, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -5437674894857053404}
@@ -128,7 +131,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: HeroMeleeAttack
-  m_Speed: 1.1
+  m_Speed: 0.65
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 2804406804818944208}
@@ -141,7 +144,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ae21a86e87766ba4ba59e433ac933265, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5f6486950b9d74d4582f92f6ff8d9f77, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -500,6 +503,32 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &6152813293463306840
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HeroKatanaAttack2
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 5f6486950b9d74d4582f92f6ff8d9f77, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &6182259376206682473
 AnimatorState:
   serializedVersion: 6

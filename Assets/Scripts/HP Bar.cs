@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class HPBar : MonoBehaviour
 {
     private Image HealthImage;
-    private float HealthCount = 100000f;
+    private float HealthCount = 100f;
     public float damageGunBullet;
     public float damageRPGBullet;
     public string gameOverSceneName;

@@ -29,7 +29,7 @@ public class KatanaAttack : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         foreach(Collider2D enemy in hitEnemies)
         {
-            Debug.Log("We hit " + enemy.name);
+           
             enemy.GetComponent<Enemy>().TakeKatanaDamage(10);
         }
 

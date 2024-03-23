@@ -5,13 +5,13 @@ using UnityEngine;
 public class KatanaEnemy_Idle : StateMachineBehaviour
 {
     Transform player;
-    public float sightRange = 0f;
+    public float sightRange;
     Rigidbody2D rb;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
     rb = animator.GetComponent<Rigidbody2D>();
-    player = GameObject.FindGameObjectWithTag("Player1").transform;
+    
         //    
     }
 

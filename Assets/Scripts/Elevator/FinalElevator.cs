@@ -18,7 +18,7 @@ public class FinalElevator : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         // Визначаємо швидкість переміщення
-        float speed = 2.0f;
+        float speed = 2.5f;
 
         // Отримуємо початкову позицію ліфта
         Vector3 startPosition = transform.position;

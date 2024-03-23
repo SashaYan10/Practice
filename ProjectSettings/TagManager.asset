@@ -12,6 +12,8 @@ TagManager:
   - Ground
   - RPGEnemyBullet
   - PlayerCanvas
+  - HP
+  - Bullets
   layers:
   - Default
   - TransparentFX

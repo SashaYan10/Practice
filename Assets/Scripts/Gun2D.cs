@@ -13,15 +13,26 @@ public class Gun2D : MonoBehaviour
     public int bulletsLeft = 30;
     public float reloadDelay = 2.0f; // Час перезарядки
 
-    public Text bulletsLeftText;
-
     private bool isShooting = false;
     private int bulletsFired = 0;
     private bool isReloading = false;
     private float reloadTimer = 0.0f;
 
+    private Text bulletsLeftText; // Змінна для зберігання посилання на Text об'єкт
+
     void Start()
     {
+        // Шукаємо об'єкт з тегом "Bullets" і отримуємо посилання на його компонент Text
+        GameObject bulletsObject = GameObject.FindGameObjectWithTag("Bullets");
+        if (bulletsObject != null)
+        {
+            bulletsLeftText = bulletsObject.GetComponent<Text>();
+        }
+        else
+        {
+            Debug.LogError("Об'єкт з тегом 'Bullets' не знайдено!");
+        }
+
         UpdateBulletsLeftText();
     }
 
@@ -86,6 +97,10 @@ public class Gun2D : MonoBehaviour
         if (bulletsLeftText != null)
         {
             bulletsLeftText.text = bulletsLeft.ToString() + "/30";
+        }
+        else
+        {
+            Debug.LogError("Посилання на bulletsLeftText не знайдено!");
         }
     }
 }

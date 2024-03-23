@@ -17690,7 +17690,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1629336931}
   - component: {fileID: 1629336933}
-  - component: {fileID: 1629336932}
   m_Layer: 0
   m_Name: Elevator_box
   m_TagString: Untagged
@@ -17715,18 +17714,6 @@ Transform:
   - {fileID: 1195582608}
   m_Father: {fileID: 1662094411}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1629336932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629336930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5f632977de97a24db67c20a3a12ef0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1629336933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24188,7 +24175,7 @@ Transform:
   m_GameObject: {fileID: 3643592623890705995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.05, y: 3.32, z: -0.015418221}
+  m_LocalPosition: {x: 24.93, y: 3.6, z: -0.015418221}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24208,7 +24195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f721a8795d66ba44eb51ba5a4e452783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Range: 12.84
+  Range: 7.3
   AlarmLight: {fileID: 2092523404103352364}
   Gun: {fileID: 7854283303683288855}
   Bullet: {fileID: 9051278110123704774, guid: 98d8c508b0d706643aa10c01366d05aa, type: 3}

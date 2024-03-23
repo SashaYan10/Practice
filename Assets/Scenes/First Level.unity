@@ -10110,7 +10110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26d4a58fe832c64bb8d627028bf8829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToDestroy: 8
+  scenesToDestroy: 0000000008000000
 --- !u!1 &2016839488
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class MusicPlayer : MonoBehaviour
 {
     private static MusicPlayer instance;
-    public int sceneToDestroy;
+    public List<int> scenesToDestroy;
 
     private void Awake()
     {
@@ -21,7 +22,8 @@ public class MusicPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().buildIndex == sceneToDestroy)
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (scenesToDestroy.Contains(currentSceneIndex))
         {
             Destroy(gameObject);
         }

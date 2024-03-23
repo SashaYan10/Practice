@@ -930,8 +930,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dc9b8acfb2be943bceb79da3c5984a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefabGun: {fileID: 1934410466187004036, guid: 87b7468c638aa154e86a1e165a4a803d, type: 3}
-  playerPrefabRPG: {fileID: 3977662962991897710, guid: b9ddace4c84c67142b1ecd34aded30ec, type: 3}
+  playerPrefabGun: {fileID: 7401070649252207235, guid: 6b0a427c857374e42bc285b8c6d2097c, type: 3}
+  playerPrefabRPG: {fileID: 1540104982569062476, guid: 56c61ededb5f8d7449ed0cc9cf86a489, type: 3}
+  playerPrefabKatana: {fileID: 6212023241104905348, guid: 07b888965826a0942b571155b042c369, type: 3}
   spawnPoint: {fileID: 0}
 --- !u!1 &896134609
 GameObject:
@@ -1360,7 +1361,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 853528014}
         m_TargetAssemblyTypeName: CharacterSelectionScript, Assembly-CSharp
-        m_MethodName: SelectCharacterRPG
+        m_MethodName: SelectCharacterKatana
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

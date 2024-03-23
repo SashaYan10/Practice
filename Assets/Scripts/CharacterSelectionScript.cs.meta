@@ -3,7 +3,11 @@ guid: 58dc9b8acfb2be943bceb79da3c5984a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playerPrefabGun: {fileID: 7401070649252207235, guid: 6b0a427c857374e42bc285b8c6d2097c, type: 3}
+  - playerPrefabRPG: {fileID: 1540104982569062476, guid: 56c61ededb5f8d7449ed0cc9cf86a489, type: 3}
+  - playerPrefabKatana: {fileID: 6212023241104905348, guid: 07b888965826a0942b571155b042c369, type: 3}
+  - spawnPoint: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

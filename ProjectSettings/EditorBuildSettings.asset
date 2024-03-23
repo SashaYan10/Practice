@@ -11,12 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prologue.unity
     guid: bf3877868afa71549b082395857e65bb
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/First Level.unity
     guid: 1971f3674c7d74540a28763cf83e9972
-  - enabled: 1
-    path: Assets/Scenes/Melee_attack_level.unity
-    guid: 3cccb968f66822240bae36d6e269515d
   - enabled: 1
     path: Assets/Scenes/Second Level.unity
     guid: 1f59368bd5181bd4190b29f853473774

@@ -14,6 +14,8 @@ TagManager:
   - PlayerCanvas
   - EnemyKatanaAttackPoint
   - PlayerForKatanaEnemy
+  - HP
+  - Bullets
   layers:
   - Default
   - TransparentFX

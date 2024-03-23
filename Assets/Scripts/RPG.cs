@@ -13,7 +13,7 @@ public class RPG : MonoBehaviour
     public int bulletsLeft = 1;
     public float reloadDelay = 2.0f; // Час перезарядки
 
-    public Text bulletsLeftText;
+    private Text bulletsLeftText; // Змінна для зберігання посилання на Text об'єкт
 
     private bool isShooting = false;
     private int bulletsFired = 0;
@@ -22,6 +22,17 @@ public class RPG : MonoBehaviour
 
     void Start()
     {
+        // Шукаємо об'єкт з тегом "Bullets" і отримуємо посилання на його компонент Text
+        GameObject bulletsObject = GameObject.FindGameObjectWithTag("Bullets");
+        if (bulletsObject != null)
+        {
+            bulletsLeftText = bulletsObject.GetComponent<Text>();
+        }
+        else
+        {
+            Debug.LogError("Об'єкт з тегом 'Bullets' не знайдено!");
+        }
+
         UpdateBulletsLeftText();
     }
 
@@ -86,6 +97,10 @@ public class RPG : MonoBehaviour
         if (bulletsLeftText != null)
         {
             bulletsLeftText.text = bulletsLeft.ToString() + "/1";
+        }
+        else
+        {
+            Debug.LogError("Посилання на bulletsLeftText не знайдено!");
         }
     }
 }

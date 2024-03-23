@@ -95,11 +95,13 @@ public class Enemy : MonoBehaviour
     //Take melee damage
     public void TakeKatanaDamage(int Damage)
     {
+        spriteRend.material = matBlink;
         health -= Damage;
         if(health <= 0)
         {
             KillEnemy();
         }
+        Invoke("ResetMaterial", .05f);
     }
     
 

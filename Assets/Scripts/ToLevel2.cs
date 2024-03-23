@@ -22,7 +22,7 @@ public class ToLevel2 : MonoBehaviour
 
     private IEnumerator WaitAndLoad()
     {
-        yield return new WaitForSeconds(22);
+        yield return new WaitForSeconds(29);
         SceneManager.LoadScene(NextLevel);
     }
 }

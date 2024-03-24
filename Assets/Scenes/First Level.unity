@@ -876,6 +876,7 @@ GameObject:
   - component: {fileID: 215486849}
   - component: {fileID: 215486848}
   - component: {fileID: 215486850}
+  - component: {fileID: 215486851}
   m_Layer: 0
   m_Name: Elevator_open
   m_TagString: Untagged
@@ -1004,6 +1005,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &215486851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215486847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730c58a7dced3754eaebf37564a4e082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &217168467
 GameObject:
   m_ObjectHideFlags: 0
@@ -6395,6 +6408,7 @@ GameObject:
   - component: {fileID: 1414130388}
   - component: {fileID: 1414130390}
   - component: {fileID: 1414130389}
+  - component: {fileID: 1414130391}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Untagged
@@ -6514,6 +6528,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1414130391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414130387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730c58a7dced3754eaebf37564a4e082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1437591048
 GameObject:
   m_ObjectHideFlags: 0
@@ -6693,6 +6719,7 @@ GameObject:
   - component: {fileID: 1498277720}
   - component: {fileID: 1498277719}
   - component: {fileID: 1498277718}
+  - component: {fileID: 1498277721}
   m_Layer: 0
   m_Name: Right border (6)
   m_TagString: Untagged
@@ -6812,6 +6839,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 352033978}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1498277721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498277717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730c58a7dced3754eaebf37564a4e082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1499976781
 GameObject:
   m_ObjectHideFlags: 0
@@ -7789,6 +7828,7 @@ GameObject:
   - component: {fileID: 1621015701}
   - component: {fileID: 1621015700}
   - component: {fileID: 1621015699}
+  - component: {fileID: 1621015702}
   m_Layer: 0
   m_Name: 3 (5)
   m_TagString: Untagged
@@ -7925,6 +7965,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1621015702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621015697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730c58a7dced3754eaebf37564a4e082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1633547810
 GameObject:
   m_ObjectHideFlags: 0
@@ -8021,6 +8073,7 @@ GameObject:
   - component: {fileID: 1679757024}
   - component: {fileID: 1679757025}
   - component: {fileID: 1679757026}
+  - component: {fileID: 1679757027}
   m_Layer: 0
   m_Name: Trigger For Door
   m_TagString: Untagged
@@ -8155,6 +8208,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1679757027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679757022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730c58a7dced3754eaebf37564a4e082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1693520489
 GameObject:
   m_ObjectHideFlags: 0
@@ -9542,6 +9607,7 @@ GameObject:
   - component: {fileID: 1910101162}
   - component: {fileID: 1910101161}
   - component: {fileID: 1910101160}
+  - component: {fileID: 1910101163}
   m_Layer: 0
   m_Name: Right border
   m_TagString: Untagged
@@ -9661,6 +9727,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 352033978}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1910101163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910101159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730c58a7dced3754eaebf37564a4e082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1933011937
 GameObject:
   m_ObjectHideFlags: 0

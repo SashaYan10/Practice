@@ -17,7 +17,7 @@ public class Trap : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Equals("Character"))
+        if (collision.gameObject.name.Equals("Character1"))
         {
             rb.isKinematic = false;
         }
@@ -33,7 +33,7 @@ public class Trap : MonoBehaviour
     {
         if (sceneLoad==true)
         {
-            if (collision.gameObject.name.Equals("Character"))
+            if (collision.gameObject.name.Equals("Character1"))
             {
                 Debug.Log("Game Over");
                 SceneManager.LoadScene(sceneIndex);

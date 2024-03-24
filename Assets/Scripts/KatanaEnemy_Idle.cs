@@ -5,13 +5,13 @@ using UnityEngine;
 public class KatanaEnemy_Idle : StateMachineBehaviour
 {
     Transform player;
-    public float sightRange = 0f;
+    public float sightRange;
     Rigidbody2D rb;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
     rb = animator.GetComponent<Rigidbody2D>();
-    player = GameObject.FindGameObjectWithTag("Player").transform;
+    
         //    
     }
 
@@ -20,6 +20,9 @@ public class KatanaEnemy_Idle : StateMachineBehaviour
     {
         //    
         sightRange = 20f;
+        rb = animator.GetComponent<Rigidbody2D>();
+        GameObject player1 = GameObject.Find("Character1");
+        player = player1.transform;
         if (Vector2.Distance(player.position, rb.position) <= sightRange)
         {
             animator.ResetTrigger("EnemyIdle");

@@ -12,6 +12,10 @@ TagManager:
   - Ground
   - RPGEnemyBullet
   - PlayerCanvas
+  - EnemyKatanaAttackPoint
+  - PlayerForKatanaEnemy
+  - HP
+  - Bullets
   layers:
   - Default
   - TransparentFX
@@ -22,7 +26,7 @@ TagManager:
   - PlayerHit
   - EnemyHit
   - PostProcessing
-  - 
+  - Enemies
   - 
   - 
   - 
